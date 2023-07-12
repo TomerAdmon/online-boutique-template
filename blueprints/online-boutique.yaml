@@ -32,7 +32,7 @@ grains:
     depends-on: namespace
     spec:
       source:
-        store: online-boutique
+        store: online-boutique-template-tomer
         path: helm-chart
       namespace: '{{ .inputs.namespace }}'
       agent:
