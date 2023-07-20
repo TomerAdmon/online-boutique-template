@@ -43,8 +43,6 @@ grains:
             store: online-boutique
             path:  misc/scripts/get-online-boutique-address.sh
           arguments: '{{ .inputs.namespace }}'
-          outputs:
-            - frontend
       inputs:
         - namespace: '{{ .inputs.namespace }}'
         - frontend.ingress.domain: 'azure-demo.raftt.io'
